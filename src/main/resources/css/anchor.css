@@ -1,0 +1,7 @@
+@import "/css/jfoenix-fonts.css";
+@import "/css/jfoenix-design.css";
+
+#anchorPane {
+    -fx-background-image:url('./../images/clouds.jpg');
+
+}

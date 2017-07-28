@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane id="anchorPane" maxHeight="400" maxWidth="602" minHeight="400" minWidth="750.0" prefHeight="400.0" prefWidth="602.0" stylesheets="@../css/anchor.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="169.0" layoutY="14.0" prefHeight="60.0" prefWidth="424.0" text="Warsaw, Poland" textFill="#061e1b5e" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="157.0">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+      <Label fx:id="temp" alignment="CENTER" layoutX="238.0" layoutY="87.0" prefHeight="71.0" prefWidth="105.0" text="18" textAlignment="CENTER" AnchorPane.leftAnchor="259.0" AnchorPane.rightAnchor="259.0">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="weatherState" alignment="CENTER" layoutX="230.0" layoutY="158.0" prefHeight="29.0" prefWidth="136.0" text="Rainy" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="236.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="284.0" text="Pressure">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="pressure" layoutX="125.0" layoutY="284.0" text="10023mp">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="283.0" text="Wind speed ">
+         <font>
+            <Font size="15.0" />
+         </font>
+
+      </Label>
+      <Label fx:id="windSpeed" layoutX="470.0" layoutY="284.0" text="15km/h">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="284.0" text="Visibility">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="visibility" layoutX="304.0" layoutY="284.0" text="10km">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="329.0" text="Humidity">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="humidity" layoutX="145.0" layoutY="329.0" text="52%">
+         <font>
+            <Font size="15.0" />
+         </font>radioMeteo
+      </Label>
+      <Label layoutX="297.0" layoutY="191.0" text="Updated as of">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lastUpdate" layoutX="409.0" layoutY="191.0" text="14:52">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="451.0" layoutY="329.0" text="Dust level: 10PM">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dLevel10" layoutX="593.0" layoutY="329.0" text="25">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="328.0" text="Dust level: 2.5PM">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dLevel2" layoutX="352.0" layoutY="329.0" text="26">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioMeteo" layoutX="360.0" layoutY="244.0" mnemonicParsing="false" text="Meteo">
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+      <RadioButton id="openWeather" fx:id="radioOpenWeather" layoutX="360.0" layoutY="218.0" mnemonicParsing="false" text="Open Weather">
+         <font>
+            <Font size="15.0" />
+         </font></RadioButton>
+      <Label layoutX="290.0" layoutY="231.0" text="Source">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="560.0" layoutY="284.0" text="Wind direction ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="windDir" layoutX="674.0" layoutY="284.0" text="230">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="refreshButton" layoutX="15.0" layoutY="360.0">
+         <graphic>
+            <FontIcon iconLiteral="fa-refresh" />
+         </graphic>
+      </JFXButton>
+
+
+   </children>
+</AnchorPane>
